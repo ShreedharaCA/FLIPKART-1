@@ -1,0 +1,54 @@
+.module_electronics {
+	li{
+		display:inline;
+		list-style-type:none;
+        .banner-img{
+            width:22px;
+            height:33px;
+            @include positioning(204px,-208px,relative);}
+		.module-img{
+			width:92px;
+			height:60px;
+			background:#ffffff;
+			float:left;
+			position:relative;
+			border:1px solid #e6e6e6;
+			padding:6px;
+			margin:0px;
+			top:121px;
+			left:320px;
+    		img{
+        		width:44px;
+        		height:44px;
+        		@include positioning(6px,34px,absolute);
+            }
+            span{
+                    @include positioning(56px,34px,absolute); 
+                    font-size:10px;
+                    font-family:arial;
+                    color:#879494;
+                    &:hover{
+                        color:#000000;
+                        cursor:pointer;}
+                }
+	        }
+
+
+    }
+	.module-header{
+        @include gradient(#403f40,#424242);
+        border: 1px solid rgb(51, 51, 51);
+        color:#ffffff;
+        font-size: 14px;
+        font-family:arial;
+        font-weight:normal;
+        height: 22px;
+        line-height: 10px;
+        text-shadow:0 -1px 1px #000002;
+        width:505px;
+        height:10px;
+        padding:10px;
+        @include positioning(90px,320px,absolute);
+       }
+    
+}
