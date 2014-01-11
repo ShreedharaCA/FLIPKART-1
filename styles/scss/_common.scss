@@ -1,8 +1,34 @@
 body {
-	background:#f5f4eb;
+	background: #f5f4eb;
+	font-family: $base-font;
+	font-size: $base-font-size;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .container {
 	width: 978px;
 	margin: 0 auto;
+}
+
+.btn {
+	display: block;
+	border-radius: 2px;
+	border: 1px solid #EC6723;
+	background-color: #F77219;
+    background-image: linear-gradient(to bottom, #F77219 1%, #FEC6A7 3%, #F77219 7%, #F75B16 100%);
+    height: 25px;
+ 	width: 80px;
+ 	line-height: 25px;
+ 	text-align: center;
+ 	&.special {
+ 		height: 35px;
+ 		line-height: 35px;
+ 	}
 }
