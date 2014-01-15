@@ -66,7 +66,7 @@ input, select {
   vertical-align: middle; }
 
 body {
-  background: #dfded7;
+  background: #f5f4eb;
   font-family: arial, tahoma, verdana, sans-serif;
   font-size: 11px;
   font-weight: normal; }
@@ -92,23 +92,7 @@ a {
   text-align: center; }
   .btn.special {
     height: 35px;
-    line-height: 35px;
-    border: 1px solid grey;
-    background: #fdcd0a;
-    color: #565656;
-    font-weight: bold;
-    font-size: 12px; }
-
-#navigation {
-  width: 100%;
-  height: 34px;
-  background: #0a3151; }
-  #navigation #nav-links ul li {
-    list-style-type: none;
-    color: yellow;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    display: table-cell;
-    vertical-align: middle; }
+    line-height: 35px; }
 
 header {
   background: #005485;
@@ -154,14 +138,11 @@ header {
   header #cart {
     float: right;
     clear: right;
-    width: 118px;
-    color: #ffffff;
-    background-image: linear-gradient(to bottom, #007fb8 1%, #6ebad5 3%, #007fb8 7%, #007fb8 100%);
-    margin-left: 22px; }
+    width: 118px; }
   header #search {
     float: right; }
-    header #search #fk-top-search-box {
-      height: 36px; }
+    header #search .fk-top-search-box {
+      height: 33px; }
     header #search .search-bar-text {
       border: 0 none;
       border-radius: 2px 0 0 2px;
@@ -178,10 +159,55 @@ header {
     position: static;
     top: 10px;
     left: 1010px; }
-  header #navigation {
-    width: 22px;
-    height: 22px;
-    background: blue; }
+  header .menu-links {
+    padding: 22px;
+    line-height: 12px;
+    margin: 0px;
+    position: static;
+    top: -8px;
+    left: 108px; }
+    header .menu-links ul {
+      list-style-type: none; }
+      header .menu-links ul li {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+        padding: 100px; }
+  header .menu-header-content ul {
+    line-height: 30px; }
+    header .menu-header-content ul ul {
+      position: static;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      top: 32px; }
+    header .menu-header-content ul li {
+      list-style: none;
+      float: left;
+      position: relative;
+      text-align: center;
+      width: 118px;
+      display: table;
+      font-family: tahoma;
+      text-decoration: none;
+      color: #FFF;
+      line-height: 12px; }
+      header .menu-header-content ul li:hover {
+        color: #606060; }
+        header .menu-header-content ul li:hover ul {
+          visibility: visible;
+          z-index: 9999; }
+
+.menu-header-content {
+  background: #0a314f;
+  -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 100%;
+  position: static;
+  top: 80px;
+  left: 0; }
 
 #fk-top-search-box {
   background: white url(img/icon-search.jpg) left no-repeat;
@@ -199,27 +225,33 @@ header {
 .module_electronics li {
   display: inline;
   list-style-type: none; }
+  .module_electronics li .banner-img {
+    width: 22px;
+    height: 33px;
+    position: relative;
+    top: 204px;
+    left: -208px; }
   .module_electronics li .module-img {
-    width: 124px;
-    height: 62px;
+    width: 92px;
+    height: 60px;
     background: #ffffff;
     float: left;
     position: relative;
-    top: 122px;
-    left: 44px;
     border: 1px solid #e6e6e6;
     padding: 6px;
-    margin: 0px; }
+    margin: 0px;
+    top: 121px;
+    left: 320px; }
     .module_electronics li .module-img img {
       width: 44px;
       height: 44px;
       position: absolute;
       top: 6px;
-      left: 46px; }
+      left: 34px; }
     .module_electronics li .module-img span {
       position: absolute;
       top: 56px;
-      left: 52px;
+      left: 34px;
       font-size: 10px;
       font-family: arial;
       color: #879494; }
@@ -243,19 +275,9 @@ header {
   height: 22px;
   line-height: 10px;
   text-shadow: 0 -1px 1px #000002;
-  width: 665px;
+  width: 505px;
   height: 10px;
   padding: 10px;
   position: absolute;
-  top: 199px;
-  left: 188px; }
-
-#bannersSection {
-  background: blue;
-  width: 526px;
-  height: 208px;
-  position: relative;
-  top: 200px;
-  left: 237px; }
-  #bannersSection .banner-img {
-    float: left; }
+  top: 90px;
+  left: 320px; }
