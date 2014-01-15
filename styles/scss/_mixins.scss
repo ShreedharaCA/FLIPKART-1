@@ -68,3 +68,11 @@
 	@include font-2(12px);
 
 }
+
+@mixin div-last-child($width,$height,$margin,$border){
+    width:$width;
+    height:$height;
+    margin:$margin;
+    float:left;
+    border:$border;
+}

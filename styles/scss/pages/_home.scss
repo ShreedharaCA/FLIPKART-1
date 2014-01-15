@@ -1,63 +1,18 @@
-.module_electronics {
-	li{
-		display:inline;
-		list-style-type:none;
+ .module{
+    .content{
        
-		.module-img{
-			width:124px;
-			height:62px;
-			background:#ffffff;
-			float:left;
-            @include positioning(122px,44px,relative);
-			border:1px solid #e6e6e6;
-			padding:6px;
-			margin:0px;
-			
-    		img{
-        		width:44px;
-        		height:44px;
-        		@include positioning(6px,46px,absolute);
-            }
-            span{
-                    @include positioning(56px,52px,absolute); 
-                    font-size:10px;
-                    font-family:arial;
-                    color:#879494;
-                    &:hover{
-                        color:#000000;
-                        cursor:pointer;}
-                }
-	        }
-    }
-
-     
-    
-	.module-header{
-        @include gradient(#403f40,#424242);
-        border: 1px solid rgb(51, 51, 51);
-        color:#ffffff;
-        font-size: 14px;
-        font-family:arial;
-        font-weight:normal;
-        height: 22px;
-        line-height: 10px;
-        text-shadow:0 -1px 1px #000002;
-        width:665px;
-        height:10px;
-        padding:10px;
-        @include positioning(199px,188px,absolute);
-       }
-    
-}
-
- #bannersSection{
-                background:blue;
-                width:526px;
-                height:208px;
-                position:relative;
-                top:200px;
-                left:237px;
-                .banner-img{
-                    float:left;
-                }
+        .categories{
+            div:last-child{
+                @include div-last-child(171px,120px,0,$default-border);}
         }
+        .best-seller{
+            div:last-child{
+                @include div-last-child(282px,200px,$default-margin,$default-border);}
+        }
+        .recommendations{
+            div:last-child{
+                @include div-last-child(210px,184px,$default-margin,none);}
+        }
+    }
+}
+ 
