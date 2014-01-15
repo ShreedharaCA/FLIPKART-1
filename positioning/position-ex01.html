@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Position</title>
+	<style type="text/css">
+
+	.position-div {
+		width: 400px;
+		height: 400px;
+	}
+
+	.child {
+		width: 150px;
+		height: 50px;
+	}
+
+	#div-absolute {
+		position: absolute;
+		background: green;
+		top: 50px;
+		right: 50px;
+		z-index: 1;
+	}
+
+	#div-fixed {
+		position: fixed;
+		background: red;
+		bottom: 100px;
+		right: 100px;
+	}
+
+	#div-static {
+		position: static;
+		background: black;
+	}
+
+	#div-relative-1 {
+		position: relative;
+		background: yellow;
+		top: 150px;
+		left: 150px;
+	}
+
+	#div-relative-2 {
+		position: relative;
+		background: orange;
+		top: 200px;
+		left: 200px;
+	}
+
+	#div-absolute-relative {
+		position: absolute;
+		background: green;
+		top: 20px;
+		right: 60px;
+		color: #FFF;
+	}
+
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eveniet, rerum, quaerat, ullam a id ex nam aliquam sapiente sit veniam nisi aspernatur officia alias sed ipsum iste provident facilis.</p>
+	<div class="position-div" id="div-absolute"></div>
+	<div class="position-div" id="div-fixed"></div>
+	<div class="position-div" id="div-static"></div>
+	<div class="position-div" id="div-relative-1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, natus, quos reprehenderit aspernatur quia nulla fuga quisquam modi aut facere accusantium porro numquam quam sit eum nihil repellat quas explicabo.</p>
+		<div class="child" id="div-absolute-relative">Shabrin
+		</div>
+
+	</div>
+	<div class="position-div" id="div-relative-2"></div>
+</body>
+</html>

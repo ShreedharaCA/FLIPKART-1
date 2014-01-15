@@ -1,0 +1,31 @@
+body{
+    background:#e6e5dc;
+    font-family:arial;
+    font-size:14px;
+}
+
+.content{
+	height:550px;
+	background:#fff;
+	margin:100px 200px 200px 200px;
+	border:1px solid #000;
+	line-height:28px;
+
+	h2{
+		background:#606060;
+		height:30px;
+		color:#fff;
+		padding-left:15px;
+		.caption{
+			float:right;
+			padding-right:15px;
+		}
+    }
+	ul > li{
+             list-style:none;
+             a{text-decoration:none;}
+    }
+}
+
+    
+    

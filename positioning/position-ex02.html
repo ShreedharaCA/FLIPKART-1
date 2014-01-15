@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding-top: 60px;
+        padding-left: 260px;
+    }
+    .position-div {
+        /*width: 400px;
+		height: 400px;*/
+    }
+    .child {
+        width: 150px;
+        height: 50px;
+    }
+    #div-fixed-header {
+        position: fixed;
+        height: 50px;
+        background: red;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #div-fixed-footer {
+        position: fixed;
+        height: 50px;
+        background: red;
+        left: 0;
+        right: 0;
+        bottom:0;
+    }
+    #div-fixed-menu {
+        position: fixed;
+        background: grey;
+        width: 250px;
+        height: 100%;
+        top: 50px;
+        left: 0;
+    }
+    #div-absolute-fixed {
+        position: absolute;
+        background: green;
+        top: 0px;
+        right: 0px;
+        color: #FFF;
+    }
+    .container {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    </style>
+	</head>
+
+	<body>
+
+		<div class="position-div" id="div-fixed-header">
+			<div class="child" id="div-absolute-fixed">
+			<a href="pop.html">Login</a>
+			</div>
+		</div>
+		<div class="container"></div>
+		<div class="position-div" id="div-fixed-menu"></div>
+		<div class="position-div" id="div-fixed-footer"></div>
+	</body>
+
+</html>
