@@ -1,0 +1,37 @@
+#navigation {
+    background:#0A314F;
+  	line-height:30px;
+    text-decoration:none;
+	text-align:center; 
+	ul{
+		li{
+			float:left;
+	        width:150px;
+			height:35px;
+			display:block;
+			color:$white;
+			@include positioning(0px,0px,relative);
+			&:hover {
+				background:$white;
+				color:$grey-font;
+				ul{
+			        @include positioning(30px,0px,relative);
+					visibility:visible;
+					cursor:pointer;
+					}
+					// .inner-menu{
+					//  ul{
+					// 	visibility:hidden;
+					// 	z-index:9999;
+					// 	li{
+					// 		background:$white;
+					// 		color:$grey-font;
+					// 		margin:5px;
+			        //      @include positioning(0px,0px,relative);
+					// 	} 
+					// }
+				//}
+			}
+		}
+	}
+}

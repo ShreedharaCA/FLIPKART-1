@@ -191,10 +191,6 @@ header {
     position: static;
     top: 10px;
     left: 1010px; }
-  header #navigation {
-    width: 22px;
-    height: 22px;
-    background: blue; }
 
 #fk-top-search-box {
   background: white url(img/icon-search.jpg) left no-repeat;
@@ -208,6 +204,30 @@ header {
   position: absolute;
   top: 10px;
   left: 354px; }
+
+#navigation {
+  background: #0A314F;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center; }
+  #navigation ul li {
+    float: left;
+    width: 150px;
+    height: 35px;
+    display: block;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 0px; }
+    #navigation ul li:hover {
+      background: white;
+      color: #606060; }
+      #navigation ul li:hover ul {
+        position: relative;
+        top: 30px;
+        left: 0px;
+        visibility: visible;
+        cursor: pointer; }
 
 .module .content .categories div:last-child {
   width: 171px;
